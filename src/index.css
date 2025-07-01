@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,6 +98,19 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-dark-bg text-foreground font-sans;
+    background: linear-gradient(135deg, #1a1f2c 0%, #252a3a 100%);
+  }
+
+  .neon-glow {
+    box-shadow:
+      0 0 5px currentColor,
+      0 0 10px currentColor,
+      0 0 15px currentColor;
+  }
+
+  .neon-border {
+    border: 1px solid;
+    border-image: linear-gradient(45deg, #8b5cf6, #0ea5e9, #d946ef) 1;
   }
 }
